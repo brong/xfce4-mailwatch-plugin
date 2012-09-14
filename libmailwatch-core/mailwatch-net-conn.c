@@ -914,7 +914,7 @@ xfce_mailwatch_net_conn_recv_line(XfceMailwatchNetConn *net_conn,
                                   gsize buf_len,
                                   GError **error)
 {
-#define BUFSTEP  1024
+#define BUFSTEP  4096
     gint bin;
     gchar *p = NULL;
 
